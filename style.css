@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+}
+
+label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-top: 1rem;
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: none;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    background-color: rgba(31, 41, 55, 1);
+    border-color: rgba(167, 139, 250, 1);
+    color: white;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.15);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    filter: invert(1);
+}
+
+input::placeholder {
+    color: rgba(107, 114, 128, 1);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#calculateBtn {
+    background-color: rgba(167, 139, 250, 1);
+    color: rgba(17, 24, 39, 1);
+}
+
+#calculateBtn:hover {
+    background-color: rgba(139, 92, 246, 1);
+}
+
+#clearBtn {
+    background-color: rgba(55, 65, 81, 1);
+    color: rgba(243, 244, 246, 1);
+}
+
+#clearBtn:hover {
+    background-color: rgba(75, 85, 99, 1);
+}
+
+#result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    background-color: rgba(31, 41, 55, 1);
+    color: rgba(243, 244, 246, 1);
+    font-size: 0.875rem;
+    line-height: 1.8rem;
+}
+
+#result strong {
+    color: rgba(167, 139, 250, 1);
+}
+
+.full-name {
+    position: fixed;
+    left: 50%;
+    top: calc(50% - 340px);
+    transform: translateX(-50%);
+    color: rgba(156, 163, 175, 1);
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.full-name:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #a78bfa,
+        0 0 10px #a78bfa,
+        0 0 20px #8b5cf6,
+        0 0 30px #8b5cf6;
+
+    transform: translateX(-50%) scale(1.08);
+}
